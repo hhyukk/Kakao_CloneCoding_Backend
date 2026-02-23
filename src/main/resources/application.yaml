@@ -8,10 +8,10 @@ spring:
     username: root
     password: choi76003347! # 실제 비밀번호로 변경해주세요
 
-    jpa:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
       hibernate:
-        ddl-auto: update
-      show-sql: true
-      properties:
-        hibernate:
-          format_sql: true
+        format_sql: true
